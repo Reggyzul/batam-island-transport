@@ -181,14 +181,14 @@ export default function Hero({ onRentClick, lang }: HeroProps) {
         </div>
       </div>
 
-      {/* Floating Royal Caribbean Search Bar — Fully visible, never cut off */}
+      {/* Floating Royal Caribbean Search Bar — Minimalist on Mobile (Destination only), Complete on Desktop */}
       <div className="relative z-30 w-full px-4 sm:px-6 lg:px-8 mt-3 mb-2 sm:mb-4">
-        <div className="max-w-6xl mx-auto bg-white rounded-2xl sm:rounded-3xl shadow-2xl p-2 sm:p-2.5 border border-gray-100 flex flex-col lg:flex-row items-stretch lg:items-center gap-2">
+        <div className="max-w-6xl mx-auto bg-white rounded-2xl sm:rounded-3xl shadow-2xl p-2 sm:p-2.5 border border-gray-100 flex flex-col sm:flex-row lg:flex-row items-stretch sm:items-center gap-2">
           
-          {/* Column 1: Destination */}
+          {/* Column 1: Destination (Always visible on mobile & desktop) */}
           <div 
             onClick={() => scrollToSection('tours')}
-            className="flex-1 px-4 py-2 rounded-xl hover:bg-gray-50 transition-colors cursor-pointer border-b lg:border-b-0 lg:border-r border-gray-200 text-left group"
+            className="flex-1 px-3.5 sm:px-4 py-2 rounded-xl hover:bg-gray-50 transition-colors cursor-pointer lg:border-r border-gray-200 text-left group"
           >
             <span className="block text-[10px] sm:text-[11px] text-gray-500 font-bold uppercase tracking-wider mb-0.5">
               {lang === 'EN' ? 'Destination' : 'Destinasi Wisata'}
@@ -201,32 +201,32 @@ export default function Hero({ onRentClick, lang }: HeroProps) {
             </div>
           </div>
 
-          {/* Column 2: Fleet Choice */}
+          {/* Column 2: Fleet Choice (Hidden on mobile, visible on desktop lg+) */}
           <div 
             onClick={() => scrollToSection('cars')}
-            className="flex-1 px-4 py-2 rounded-xl hover:bg-gray-50 transition-colors cursor-pointer border-b lg:border-b-0 lg:border-r border-gray-200 text-left group"
+            className="hidden lg:block flex-1 px-4 py-2 rounded-xl hover:bg-gray-50 transition-colors cursor-pointer border-r border-gray-200 text-left group"
           >
-            <span className="block text-[10px] sm:text-[11px] text-gray-500 font-bold uppercase tracking-wider mb-0.5">
+            <span className="block text-[11px] text-gray-500 font-bold uppercase tracking-wider mb-0.5">
               {lang === 'EN' ? 'Fleet Choice' : 'Pilihan Armada'}
             </span>
             <div className="flex items-center justify-between">
-              <span className="text-xs sm:text-sm font-extrabold text-[#0052D4] truncate group-hover:text-blue-700">
+              <span className="text-sm font-extrabold text-[#0052D4] truncate group-hover:text-blue-700">
                 Pajero Sport, Reborn & Zenix
               </span>
               <ChevronDown className="w-3.5 h-3.5 text-[#0052D4] shrink-0 ml-1.5" />
             </div>
           </div>
 
-          {/* Column 3: Service & Schedule */}
+          {/* Column 3: Service & Schedule (Hidden on mobile, visible on desktop lg+) */}
           <div 
             onClick={() => scrollToSection('extra-services')}
-            className="flex-1 px-4 py-2 rounded-xl hover:bg-gray-50 transition-colors cursor-pointer text-left group"
+            className="hidden lg:block flex-1 px-4 py-2 rounded-xl hover:bg-gray-50 transition-colors cursor-pointer text-left group"
           >
-            <span className="block text-[10px] sm:text-[11px] text-gray-500 font-bold uppercase tracking-wider mb-0.5">
+            <span className="block text-[11px] text-gray-500 font-bold uppercase tracking-wider mb-0.5">
               {lang === 'EN' ? 'Service & Schedule' : 'Layanan & Durasi'}
             </span>
             <div className="flex items-center justify-between">
-              <span className="text-xs sm:text-sm font-extrabold text-[#0052D4] truncate group-hover:text-blue-700">
+              <span className="text-sm font-extrabold text-[#0052D4] truncate group-hover:text-blue-700">
                 {lang === 'EN' ? 'Daily Rental, Transfer & Charter' : 'Rental Harian, Antar-Jemput & Charter'}
               </span>
               <ChevronDown className="w-3.5 h-3.5 text-[#0052D4] shrink-0 ml-1.5" />
@@ -236,10 +236,10 @@ export default function Hero({ onRentClick, lang }: HeroProps) {
           {/* Action Button: Royal Blue Pill Button */}
           <button
             onClick={handleConsultation}
-            className="bg-[#0052D4] hover:bg-[#003da5] text-white font-extrabold text-xs sm:text-sm py-3 px-6 sm:px-7 rounded-full transition-all shadow-md cursor-pointer whitespace-nowrap shrink-0 flex items-center justify-center gap-2 group active:scale-95"
+            className="bg-[#0052D4] hover:bg-[#003da5] text-white font-extrabold text-xs sm:text-sm py-2.5 sm:py-3 px-5 sm:px-7 rounded-full transition-all shadow-md cursor-pointer whitespace-nowrap shrink-0 flex items-center justify-center gap-2 group active:scale-95"
             id="search-bar-submit"
           >
-            <Search className="w-4 h-4" />
+            <Search className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
             <span>{lang === 'EN' ? 'Search & Book' : 'Cari & Booking'}</span>
           </button>
 
