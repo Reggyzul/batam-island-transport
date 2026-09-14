@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Main Homepage (Default Canonical) -->
+  <url>
+    <loc>https://rinjanitransports.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rinjanitransports.com/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rinjanitransports.com/?lang=id" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rinjanitransports.com/" />
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://rinjanitransports.com/hero_sembalun.jpg</image:loc>
+      <image:title>Rinjani Transport - Mount Rinjani and Sembalun Lombok Tour</image:title>
+      <image:caption>Private car rental with driver and tour travel service in Senaru and Sembalun, Lombok</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rinjanitransports.com/innova.jpg</image:loc>
+      <image:title>Toyota Innova Reborn Car Rental Lombok</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://rinjanitransports.com/hiace_premio.jpg</image:loc>
+      <image:title>Toyota Hiace Premio VIP Minibus Lombok</image:title>
+    </image:image>
+  </url>
+
+  <!-- English Language URL -->
+  <url>
+    <loc>https://rinjanitransports.com/?lang=en</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rinjanitransports.com/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rinjanitransports.com/?lang=id" />
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Indonesian Language URL -->
+  <url>
+    <loc>https://rinjanitransports.com/?lang=id</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rinjanitransports.com/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rinjanitransports.com/?lang=id" />
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+</urlset>

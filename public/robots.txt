@@ -1,0 +1,17 @@
+# Robots.txt for Rinjani Transport Lombok
+User-agent: *
+Allow: /
+Disallow: /api/
+
+# Explicit search engine crawler allowances
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Sitemap Index Location
+Sitemap: https://rinjanitransports.com/sitemap.xml
