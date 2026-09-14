@@ -16,7 +16,6 @@ export default function Hero({ onRentClick, lang }: HeroProps) {
     {
       id: 'barelang',
       title: lang === 'EN' ? 'MAJESTIC BARELANG BRIDGE & ISLANDS' : 'KEMEGAHAN JEMBATAN BARELANG BATAM',
-      promoLine: lang === 'EN' ? '+ Premier Car Rental & Tour Service Since 1994*' : '+ Layanan Rental Mobil & Tour Terpercaya Sejak 1994*',
       subtitle: lang === 'EN' 
         ? 'Need a reliable car and driver in Batam? Contact us and let us arrange the transportation that fits your journey.'
         : 'Nikmati keindahan mahakarya 6 jembatan megah Barelang, pesona bahari, dan kuliner seafood segar bersama Batam Island Transport.',
@@ -29,7 +28,6 @@ export default function Hero({ onRentClick, lang }: HeroProps) {
     {
       id: 'corporate',
       title: lang === 'EN' ? 'CUSTOM ITINERARY & CORPORATE CHARTER' : 'CUSTOM TOUR & CORPORATE CHARTER',
-      promoLine: lang === 'EN' ? '+ VIP Executive Vehicles & Group Delegation Support*' : '+ Armada VIP Eksekutif & Dukungan Delegasi Perusahaan*',
       subtitle: lang === 'EN'
         ? 'Tailored private transportation offering complete flexibility for business meetings, corporate delegations, and bespoke itineraries.'
         : 'Layanan transportasi privat dengan kebebasan penuh mengatur jadwal dan rute untuk agenda meeting bisnis, delegasi corporate, dan tour kustom.',
@@ -42,7 +40,6 @@ export default function Hero({ onRentClick, lang }: HeroProps) {
     {
       id: 'nagoya',
       title: lang === 'EN' ? 'VIBRANT NAGOYA SHOPPING & CULINARY' : 'PUSAT BELANJA & KULINER NAGOYA BATAM',
-      promoLine: lang === 'EN' ? '+ Full Trunk Capacity for Shopping & Door-to-Door Transfer*' : '+ Bagasi Luas Belanja & Antar-Jemput Pelabuhan/Hotel*',
       subtitle: lang === 'EN'
         ? 'Explore premier retail malls, vibrant street delicacies, relaxing spas, and commercial centers comfortably with our fleet.'
         : 'Kemudahan eksplorasi Nagoya Hill, Grand Batam, aneka kuliner khas, dan pusat bisnis bersama driver profesional berpengalaman sejak 1994.',
@@ -55,7 +52,6 @@ export default function Hero({ onRentClick, lang }: HeroProps) {
     {
       id: 'nongsa',
       title: lang === 'EN' ? 'LUXURY NONGSA BEACH & MARINA ESCAPE' : 'EKSKLUSIVITAS RESOR & MARINA NONGSA',
-      promoLine: lang === 'EN' ? '+ 5-Star Resort Transfers, Yacht Marina & Golf Courses*' : '+ Antar-Jemput Resor Bintang 5, Marina Kapal Pesiar & Golf*',
       subtitle: lang === 'EN'
         ? 'Seamless transfers to five-star beachfront resorts, Nongsa Point Marina, and world-class golf greens in Batam.'
         : 'Antar-jemput nyaman ke kawasan resor mewah, Nongsa Point Marina, terminal ferry, dan lapangan golf tepi pantai Batam.',
@@ -139,11 +135,6 @@ export default function Hero({ onRentClick, lang }: HeroProps) {
                 {currentSlide.title}
               </h1>
 
-              {/* Promo / Benefit Line */}
-              <p className="text-xs sm:text-sm lg:text-base font-bold text-white tracking-wide drop-shadow">
-                {currentSlide.promoLine}
-              </p>
-
               {/* Subtitle Description */}
               <p className="text-xs sm:text-sm text-white/85 leading-relaxed max-w-xl font-normal line-clamp-2 sm:line-clamp-3">
                 {currentSlide.subtitle}
@@ -169,7 +160,7 @@ export default function Hero({ onRentClick, lang }: HeroProps) {
                   <span>{t.hero_cta_cars}</span>
                 </button>
 
-                {/* Carousel Navigation Dots inline or beside buttons */}
+                {/* Carousel Navigation Dots */}
                 <div className="flex items-center gap-1.5 ml-2">
                   {slides.map((_, idx) => (
                     <button
