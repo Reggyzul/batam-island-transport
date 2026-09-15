@@ -37,13 +37,13 @@ export const COMMON_PACKAGE_TIERS: PackageTier[] = [
     name: 'Standard Transport',
     badge: 'Hemat & Praktis',
     inclusions: [
-      'Mobil Privat AC Sesuai Pilihan (Pajero / Innova Reborn / Zenix)',
+      'Mobil Privat AC Sesuai Pilihan (Pajero / HiAce / Zenix / Reborn)',
       'Driver Berpengalaman & BBM',
       'Air Mineral Selama Perjalanan',
       'Antar-Jemput Hotel / Pelabuhan / Bandara'
     ],
     inclusionsEn: [
-      'Private AC Car (Pajero Sport / Innova Reborn / Zenix)',
+      'Private AC Car (Pajero Sport / HiAce / Innova Zenix / Reborn)',
       'Experienced Driver and Fuel',
       'Mineral Water during the trip',
       'Hotel / Ferry Port / Airport Pickup'
@@ -120,14 +120,14 @@ export const TOUR_PACKAGES: TourPackage[] = [
       'Private air-conditioned car with courteous licensed driver'
     ],
     included: [
-      'Mobil privat AC (Pajero Sport / Innova Reborn / Zenix)',
+      'Mobil privat AC (Pajero Sport / HiAce / Innova Zenix / Reborn)',
       'Driver profesional & BBM',
       'Antar-jemput dari hotel, pelabuhan ferry, atau bandara',
       'Biaya parkir di lokasi wisata',
       'Air mineral dingin'
     ],
     includedEn: [
-      'Private AC car (Pajero Sport / Innova Reborn / Zenix)',
+      'Private AC car (Pajero Sport / HiAce / Innova Zenix / Reborn)',
       'Professional driver & fuel',
       'Door-to-door hotel, ferry port, or airport pickup',
       'Attraction parking fees',
@@ -244,14 +244,14 @@ export const TOUR_PACKAGES: TourPackage[] = [
       'Peaceful tropical retreat away from city hustle'
     ],
     included: [
-      'Mobil privat AC pilihan (Pajero Sport / Innova Reborn / Zenix)',
+      'Mobil privat AC pilihan (Pajero Sport / HiAce / Innova Zenix / Reborn)',
       'Driver ramah & bahan bakar (BBM)',
       'Antar-jemput dari Nongsa Pura Ferry Terminal, Bandara Hang Nadim, atau hotel',
       'Biaya parkir kawasan resor & marina',
       'Air mineral dingin'
     ],
     includedEn: [
-      'Private AC car (Pajero Sport / Innova Reborn / Zenix)',
+      'Private AC car (Pajero Sport / HiAce / Innova Zenix / Reborn)',
       'Courteous driver & fuel',
       'Pickup from Nongsa Pura Ferry, Hang Nadim Airport, or hotel',
       'Resort & marina parking fees',
@@ -293,14 +293,14 @@ export const TOUR_PACKAGES: TourPackage[] = [
     descriptionEn: 'Customized private transport offering total flexibility in designing your own schedule and routes anywhere across Batam. Perfect for corporate business inspections, family groups, and bespoke leisure trips.',
     highlights: [
       'Rute dan destinasi bebas ditentukan sesuai keinginan Anda',
-      'Pilihan armada lengkap: Mitsubishi Pajero Sport, Innova Reborn, dan Innova Zenix',
+      'Pilihan armada lengkap: Pajero Sport, Toyota HiAce, Innova Zenix, dan Innova Reborn',
       'Dukungan armada fleksibel dalam jumlah unit untuk rombongan group / corporate',
       'Driver profesional yang ramah, sopan, dan siap mendampingi perjalanan Anda',
       'Pengalaman panjang sejak 1994 memastikan perjalanan Anda berjalan mulus'
     ],
     highlightsEn: [
       'Complete freedom to tailor your stops and destinations',
-      'Premier fleet selection: Mitsubishi Pajero Sport, Innova Reborn, Innova Zenix',
+      'Premier fleet selection: Pajero Sport, Toyota HiAce, Innova Zenix, and Innova Reborn',
       'Multi-vehicle group and corporate delegation support',
       'Professional, courteous drivers at your service all day',
       'Proven expertise since 1994 ensuring flawless logistics'

@@ -77,7 +77,7 @@ export default function Header({
     {
       id: 'rentals',
       label: lang === 'EN' ? 'Car Rental Fleet' : 'Pilihan Armada Mobil',
-      desc: lang === 'EN' ? 'Pajero Sport, Innova Reborn & Zenix' : 'Pajero Sport, Innova Reborn & Zenix',
+      desc: lang === 'EN' ? 'Pajero Sport, HiAce, Zenix & Reborn' : 'Pajero Sport, HiAce, Zenix & Reborn',
       icon: Car,
       action: () => handlePageClick('rentals')
     },

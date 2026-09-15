@@ -30,31 +30,31 @@ export const CARS: Car[] = [
     ]
   },
   {
-    id: 'toyota-innova-reborn',
-    name: 'Toyota Innova Reborn',
-    nameAr: 'تويوتا إنوفا ريبورن',
-    category: 'Premium MPV',
-    categoryEn: 'Premium MPV',
+    id: 'toyota-hiace',
+    name: 'Toyota HiAce Commuter',
+    nameAr: 'تويوتا هايس',
+    category: 'Executive Minibus Van',
+    categoryEn: 'Executive Minibus Van',
     pricePerDay: 0,
     priceDisplay: 'Hubungi untuk Penawaran Terbaik',
     priceDisplayEn: 'Contact for Best Offer',
-    image: '/innova_reborn.png',
-    seats: 7,
-    transmission: 'Manual/Matic',
-    fuel: 'Diesel / Gasoline',
-    fuelAr: 'ديزل / بنزين',
-    includeList: ['Mobil Prima', 'Driver Berpengalaman', 'Kenyamanan Ekstra'],
-    includeListEn: ['Private MPV', 'Experienced Driver', 'Extra Comfort'],
-    includeListAr: ['السيارة', 'السائق', 'راحة إضافية'],
-    description: 'MPV kelas premium paling favorit untuk keluarga, wisatawan, dan perjalanan dinas di Batam. Dilengkapi suspensi empuk, kabin lapang, dan bagasi yang luas untuk koper belanjaan dan barang bawaan.',
-    descriptionEn: 'The all-time favorite premium MPV for families, tourists, and corporate duty across Batam Island. Boasts plush suspension, spacious cabin room, and generous luggage capacity.',
-    descriptionAr: 'سيارة عائلية ممتازة ومريحة بمساحة واسعة للحقائب ومقاعد مريحة لجميع مناطق باتام.',
-    rating: 4.9,
-    reviewsCount: 188,
+    image: '/hiace_commuter.png',
+    seats: 14,
+    transmission: 'Manual',
+    fuel: 'Diesel',
+    fuelAr: 'ديزل',
+    includeList: ['Minibus Luas & Nyaman', 'Driver Berpengalaman', 'AC Sejuk Tiap Baris'],
+    includeListEn: ['Spacious Minibus', 'Experienced Driver', 'Full AC to Back Row'],
+    includeListAr: ['حافلة واسعة', 'سائق محترف', 'مكيف لجميع المقاعد'],
+    description: 'Minibus eksekutif berkapasitas besar dan nyaman untuk rombongan keluarga besar, wisatawan group, kunjungan dinas, maupun delegasi corporate di Batam. Kabin tinggi dan lega, kursi nyaman, serta AC dingin merata.',
+    descriptionEn: 'High-capacity executive commuter van designed for optimal group comfort, large families, tour groups, and corporate delegations in Batam. Boasts elevated ceiling, ample legroom, and powerful chilled dual AC.',
+    descriptionAr: 'حافلة صغيرة تنفيذية واسعة ومريحة ومثالية للمجموعات الكبيرة والرحلات العائلية والوفود الرسمية في جزيرة باتام.',
+    rating: 5.0,
+    reviewsCount: 165,
     specifications: [
-      { label: 'Kapasitas', value: 'Maks. 7 Penumpang', labelAr: 'السعة', valueAr: '٧ ركاب' },
-      { label: 'Fasilitas', value: 'Kabin Luas, AC Double Blower, Peredam Halus', labelAr: 'الميزات', valueAr: 'راحة ممتازة، مكيف مزدوج' },
-      { label: 'Layanan', value: 'Termasuk Driver Berpengalaman & Ramah', labelAr: 'الخدمة', valueAr: 'سائق محترف' }
+      { label: 'Kapasitas', value: 'Maks. 14 - 15 Penumpang', labelAr: 'السعة', valueAr: '١٤-١٥ راكب' },
+      { label: 'Fasilitas', value: 'Kabin Tinggi Lega, AC Tiap Baris, Audio USB', labelAr: 'الميزات', valueAr: 'مكيف لكل مقعد، مقاعد مريحة' },
+      { label: 'Layanan', value: 'Termasuk Driver Berpengalaman & Tepat Waktu', labelAr: 'الخدمة', valueAr: 'سائق محترف' }
     ]
   },
   {
@@ -84,6 +84,34 @@ export const CARS: Car[] = [
       { label: 'Fasilitas', value: 'Kabin Modern Mewah, Suspensi Monocoque, AC Digital', labelAr: 'الميزات', valueAr: 'تصميم فخم، عزل صوت، راحة مطلقة' },
       { label: 'Layanan', value: 'Termasuk Driver Berpengalaman & Tepat Waktu', labelAr: 'الخدمة', valueAr: 'سائق محترف' }
     ]
+  },
+  {
+    id: 'toyota-innova-reborn',
+    name: 'Toyota Innova Reborn',
+    nameAr: 'تويوتا إنوفا ريبورن',
+    category: 'Premium MPV',
+    categoryEn: 'Premium MPV',
+    pricePerDay: 0,
+    priceDisplay: 'Hubungi untuk Penawaran Terbaik',
+    priceDisplayEn: 'Contact for Best Offer',
+    image: '/innova_reborn.png',
+    seats: 7,
+    transmission: 'Manual/Matic',
+    fuel: 'Diesel / Gasoline',
+    fuelAr: 'ديزل / بنزين',
+    includeList: ['Mobil Prima', 'Driver Berpengalaman', 'Kenyamanan Ekstra'],
+    includeListEn: ['Private MPV', 'Experienced Driver', 'Extra Comfort'],
+    includeListAr: ['السيارة', 'السائق', 'راحة إضافية'],
+    description: 'MPV kelas premium paling favorit untuk keluarga, wisatawan, dan perjalanan dinas di Batam. Dilengkapi suspensi empuk, kabin lapang, dan bagasi yang luas untuk koper belanjaan dan barang bawaan.',
+    descriptionEn: 'The all-time favorite premium MPV for families, tourists, and corporate duty across Batam Island. Boasts plush suspension, spacious cabin room, and generous luggage capacity.',
+    descriptionAr: 'سيارة عائلية ممتازة ومريحة بمساحة واسعة للحقائب ومقاعد مريحة لجميع مناطق باتام.',
+    rating: 4.9,
+    reviewsCount: 188,
+    specifications: [
+      { label: 'Kapasitas', value: 'Maks. 7 Penumpang', labelAr: 'السعة', valueAr: '٧ ركاب' },
+      { label: 'Fasilitas', value: 'Kabin Luas, AC Double Blower, Peredam Halus', labelAr: 'الميزات', valueAr: 'راحة ممتازة، مكيف مزدوج' },
+      { label: 'Layanan', value: 'Termasuk Driver Berpengalaman & Ramah', labelAr: 'الخدمة', valueAr: 'سائق محترف' }
+    ]
   }
 ];
 
@@ -108,6 +136,15 @@ export const TESTIMONIALS: Testimonial[] = [
   },
   {
     id: 'testi-3',
+    name: 'Marcus Lee & Tour Group',
+    role: 'Group Traveler from Singapore',
+    text: 'Booked their Toyota HiAce Commuter for our group visiting Batam. The van was very comfortable, spacious with cold AC, and the driver was punctual and polite. Highly recommended for group travel!',
+    rating: 5,
+    carModel: 'Toyota HiAce Commuter',
+    date: 'Agustus 2026'
+  },
+  {
+    id: 'testi-4',
     name: 'Keluarga Budi & Hendra',
     role: 'Wisatawan Domestik dari Jakarta',
     text: 'Sangat puas menggunakan jasa Batam Island Transport! Jemput tepat waktu di Bandara Hang Nadim, keliling Nagoya untuk kuliner dan belanja oleh-oleh, lalu ke jembatan Barelang. Mobil Innova Reborn sangat bersih dan wangi.',

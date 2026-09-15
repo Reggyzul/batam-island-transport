@@ -28,7 +28,7 @@ export default function Testimonials({ lang }: TestimonialsProps) {
   const [newRole, setNewRole] = useState('');
   const [newText, setNewText] = useState('');
   const [newRating, setNewRating] = useState(5);
-  const [newCarModel, setNewCarModel] = useState('Innova Reborn');
+  const [newCarModel, setNewCarModel] = useState('Mitsubishi Pajero Sport');
   const [successMsg, setSuccessMsg] = useState(false);
 
   // Auto scroll testimonials periodically
@@ -330,12 +330,10 @@ export default function Testimonials({ lang }: TestimonialsProps) {
                             onChange={(e) => setNewCarModel(e.target.value)}
                             className="block w-full bg-luxury-card border border-white/10 rounded-xl px-3 py-2 text-white focus:ring-1 focus:ring-luxury-gold text-xs font-sans cursor-pointer"
                           >
-                            <option value="All New Avanza">All New Avanza</option>
-                            <option value="Innova Reborn">Innova Reborn</option>
-                            <option value="Toyota Hiace Commuter">Toyota Hiace Commuter</option>
-                            <option value="Toyota Hiace Premio">Toyota Hiace Premio</option>
-                            <option value="Isuzu Elf Long">Isuzu Elf Long</option>
-                            <option value="Medium Bus / Bus Kecil">Medium Bus / Bus Kecil</option>
+                            <option value="Mitsubishi Pajero Sport">Mitsubishi Pajero Sport</option>
+                            <option value="Toyota HiAce Commuter">Toyota HiAce Commuter</option>
+                            <option value="Toyota Innova Zenix">Toyota Innova Zenix</option>
+                            <option value="Toyota Innova Reborn">Toyota Innova Reborn</option>
                           </select>
                         </div>
 

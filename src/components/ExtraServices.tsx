@@ -15,7 +15,7 @@ export default function ExtraServices({ lang, onOneWayClick }: ExtraServicesProp
       icon: <Car className="w-7 h-7 text-[#b8860b]" />,
       badge: lang === 'EN' ? 'Car Rental + Driver' : 'Rental + Driver',
       title: lang === 'EN' ? 'Car Rental with Driver' : 'Rental Mobil + Driver',
-      subtitle: lang === 'EN' ? 'Pajero Sport, Innova Reborn & Zenix' : 'Armada Nyaman & Pengemudi Profesional',
+      subtitle: lang === 'EN' ? 'Pajero Sport, HiAce, Zenix & Reborn' : 'Pajero Sport, HiAce, Zenix & Reborn',
       description: lang === 'EN'
         ? 'Private car rental with professional driver tailored for individual, family, and executive travel across Batam with maximum convenience and safety.'
         : 'Layanan sewa mobil privat dengan sopir profesional untuk kebutuhan perjalanan pribadi, keluarga, dan eksekutif di Batam dengan kenyamanan maksimal.',

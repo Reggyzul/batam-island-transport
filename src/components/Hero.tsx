@@ -211,7 +211,7 @@ export default function Hero({ onRentClick, lang }: HeroProps) {
             </span>
             <div className="flex items-center justify-between">
               <span className="text-sm font-extrabold text-[#0052D4] truncate group-hover:text-blue-700">
-                Pajero Sport, Reborn & Zenix
+                Pajero, HiAce, Zenix & Reborn
               </span>
               <ChevronDown className="w-3.5 h-3.5 text-[#0052D4] shrink-0 ml-1.5" />
             </div>

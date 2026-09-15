@@ -13,7 +13,7 @@ export const DEFAULT_WA_TEMPLATE = `*Batam Island Transport*
 Halo Batam Island Transport, saya ingin konsultasi layanan transportasi & rental mobil di Batam:
 
 *Kebutuhan Layanan:*
-- Rental Mobil + Driver (Mitsubishi Pajero Sport / Innova Reborn / Innova Zenix)
+- Rental Mobil + Driver (Mitsubishi Pajero Sport / Toyota HiAce / Innova Zenix / Innova Reborn)
 - Transportasi Bandara Hang Nadim (BTH)
 - Antar-Jemput Pelabuhan Ferry (Batam Centre / Harbour Bay / Sekupang / Nongsa Pura)
 - Antar-Jemput Hotel & Resort Batam
@@ -28,4 +28,11 @@ export const openWhatsApp = (customMessage?: string, phoneNumber: string = DEFAU
   const cleanPhone = phoneNumber.replace(/[^0-9]/g, '');
   const url = `https://api.whatsapp.com/send?phone=${cleanPhone}&text=${encodeURIComponent(text)}`;
   window.open(url, '_blank', 'noreferrer');
+};
+
+export const openRequestKendaraanWhatsApp = (lang: 'ID' | 'EN' = 'ID') => {
+  const message = lang === 'EN'
+    ? `Halo Batam Island Transport, I would like to make a *Vehicle Request (Request Kendaraan)* for our travel in Batam. Please let me know what units are available and the price quotation.`
+    : `Halo Batam Island Transport, saya ingin melakukan *Request Kendaraan* untuk kebutuhan perjalanan kami di Batam. Mohon info unit kendaraan yang tersedia dan penawarannya.`;
+  openWhatsApp(message);
 };
