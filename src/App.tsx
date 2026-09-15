@@ -56,8 +56,18 @@ export default function App() {
   useEffect(() => {
     document.documentElement.lang = lang === 'EN' ? 'en' : 'id';
     document.title = lang === 'EN'
-      ? 'Batam Island Transport - Batam Car Rental with Driver, Airport & Port Transfer'
-      : 'Batam Island Transport - Rental Mobil + Driver, Antar-Jemput Bandara & Pelabuhan Batam';
+      ? 'Batam Car Rental with Driver | Airport & Port Transfer - Batam Island Transport'
+      : 'Sewa Mobil Batam Murah + Driver | Rental Mobil & Antar Jemput Bandara - Batam Island Transport';
+
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute(
+        'content',
+        lang === 'EN'
+          ? 'Batam Car Rental with professional driver since 1994. Toyota HiAce Commuter, Mitsubishi Pajero Sport, Innova Zenix & Reborn. Hang Nadim Airport & ferry port transfers. 24/7 WhatsApp booking.'
+          : 'Sewa Mobil Batam dengan driver profesional berpengalaman sejak 1994. Rental Toyota HiAce Commuter, Mitsubishi Pajero Sport, Innova Zenix & Reborn. Antar-jemput Bandara Hang Nadim, Pelabuhan Ferry & Tour. Siap 24/7.'
+      );
+    }
   }, [lang]);
   
   const t = TRANSLATIONS[lang];
