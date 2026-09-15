@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { CARS } from '../data/cars';
 import { Car } from '../types';
 import { motion } from 'motion/react';
-import { Calendar, Users, Settings, MapPin, ChevronDown, Star, Sparkles, ArrowRight } from 'lucide-react';
+import { Calendar, Users, Settings, MapPin, ChevronDown, Star, ArrowRight } from 'lucide-react';
 import { TRANSLATIONS } from '../utils/translations';
 import { DEFAULT_WA_NUMBER } from '../utils/whatsapp';
 
@@ -25,11 +25,9 @@ export default function CarList({ onSelectCar, lang, limit, onViewMore }: CarLis
     window.open(`https://api.whatsapp.com/send?phone=${waNumber}&text=${encodeURIComponent(message)}`, '_blank', 'noreferrer');
   };
 
-  const handleRequestKendaraanWA = () => {
+  const handleRequestFleetWA = () => {
     const waNumber = DEFAULT_WA_NUMBER;
-    const message = lang === 'EN'
-      ? `Halo Batam Island Transport, saya ingin melakukan *Request Kendaraan* khusus untuk perjalanan di Batam. Mohon informasi pilihan unit dan penawarannya.`
-      : `Halo Batam Island Transport, saya ingin melakukan *Request Kendaraan* untuk kebutuhan perjalanan di Batam. Mohon informasi pilihan unit yang tersedia dan penawarannya.`;
+    const message = `Hello Batam Island Transport, I would like to request a custom vehicle / fleet (such as Alphard, Bus, Fortuner, or other unit) for our journey in Batam. Please provide information on unit availability and rates.`;
     window.open(`https://api.whatsapp.com/send?phone=${waNumber}&text=${encodeURIComponent(message)}`, '_blank', 'noreferrer');
   };
 
@@ -184,46 +182,38 @@ export default function CarList({ onSelectCar, lang, limit, onViewMore }: CarLis
           </div>
         )}
 
-        {/* Request Kendaraan Section directly below Armada */}
+        {/* Simple Request Fleet Bar (in English) */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.15 }}
-          className="mt-12 sm:mt-16 relative overflow-hidden rounded-3xl bg-gradient-to-r from-slate-900 via-[#0f2444] to-slate-900 text-white p-6 sm:p-8 md:p-10 border border-blue-800/30 shadow-xl"
-          id="request-kendaraan-section"
+          transition={{ duration: 0.4 }}
+          className="mt-10 max-w-2xl mx-auto"
+          id="request-fleet-bar"
         >
-          {/* Subtle glowing ambient lights */}
-          <div className="absolute -top-24 -right-24 w-72 h-72 bg-blue-500/15 rounded-full blur-3xl pointer-events-none" />
-          <div className="absolute -bottom-24 -left-24 w-72 h-72 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
-
-          <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
-            <div className="space-y-2.5 max-w-2xl">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur-sm border border-white/15 text-luxury-gold text-xs font-bold tracking-wider uppercase">
-                <Sparkles className="w-3.5 h-3.5 text-luxury-gold" />
-                <span>{t.cars_request_tag}</span>
-              </div>
-              <h3 className="font-display font-extrabold text-2xl sm:text-3xl text-white tracking-tight">
-                {t.cars_request_title}
-              </h3>
-              <p className="font-sans text-gray-300 text-xs sm:text-sm leading-relaxed">
-                {t.cars_request_desc}
-              </p>
-            </div>
-
-            <div className="shrink-0 w-full md:w-auto">
-              <button
-                onClick={handleRequestKendaraanWA}
-                className="w-full md:w-auto inline-flex items-center justify-center gap-3 bg-[#25D366] hover:bg-[#20ba5a] text-white font-display font-bold text-sm sm:text-base py-3.5 px-8 rounded-2xl shadow-lg hover:shadow-green-500/25 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 cursor-pointer group"
-                id="request-kendaraan-wa-btn"
-              >
-                <svg className="w-5 h-5 fill-current shrink-0 group-hover:rotate-12 transition-transform duration-300" viewBox="0 0 24 24">
+          <div 
+            onClick={handleRequestFleetWA}
+            className="bg-white border border-gray-200/90 hover:border-[#25D366] rounded-2xl sm:rounded-full px-5 py-3 sm:py-2.5 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col sm:flex-row items-center justify-between gap-3.5 cursor-pointer group"
+          >
+            <div className="flex items-center gap-3 text-center sm:text-left">
+              <div className="w-8 h-8 rounded-full bg-emerald-50 text-[#25D366] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                   <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
                 </svg>
-                <span>{t.cars_request_btn}</span>
-                <ArrowRight className="w-4 h-4 ml-0.5 group-hover:translate-x-1 transition-transform duration-300" />
-              </button>
+              </div>
+              <span className="text-sm font-semibold text-gray-800">
+                Looking for another vehicle? <span className="text-gray-500 font-normal text-xs sm:text-sm">(Alphard, Bus, etc.)</span>
+              </span>
             </div>
+
+            <button
+              type="button"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#25D366] group-hover:bg-[#20ba5a] text-white font-display font-bold text-xs py-2 px-4 rounded-full shadow-sm transition-all duration-200 shrink-0 cursor-pointer"
+              id="request-fleet-wa-btn"
+            >
+              <span>Request Fleet</span>
+              <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
+            </button>
           </div>
         </motion.div>
 
